@@ -1,0 +1,39 @@
+/* estilos generales */
+
+@import url();
+
+/* si tengo que descargar como dafont uso
+@fontface */
+
+
+/* main */
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    font-style: italic;
+}
+
+.banner{
+    background: ;
+   /* usar todos menos size */
+   
+    background-color: wheat;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px -30%;
+    height: 400px;
+}
+
+.banner p{
+    color: white
+}
+/* Footer */
+footer{
+    background-color: #ccc;
+    text-align: center;
+}
