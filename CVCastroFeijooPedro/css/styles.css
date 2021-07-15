@@ -1,0 +1,50 @@
+
+Body{
+    font-family: 'Yomogi', cursive;
+}
+
+.Logo{
+    background-color: #E5E5E5;
+    height: 200px;
+    width: 200px;
+    align: center;
+  
+    }
+.Titulo{
+    background-color:#C4C4C4;
+    letter-spacing: 5px;
+    color: #000000;
+}
+
+h3{
+    background: #C4C4C4;
+    letter-spacing: 5px;
+    color: #000000;
+}
+span{
+    Font-weight: bold;
+}
+.span{
+    Font-style: italic
+}
+
+.Footer{
+
+    background-color: #070707;
+    color:white;
+    text-align:center;
+}
+
+main{margin-top: 100px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    dd {
+        padding-bottom: 8px;
+        margin-inline-start: 79px;
+    }
+    dl{
+        line-height: 22px;
+    }
