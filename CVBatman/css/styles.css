@@ -33,3 +33,11 @@ main{margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     }
+
+    dd {
+        padding-bottom: 8px;
+        margin-inline-start: 79px;
+    }
+    dl{
+        line-height: 22px;
+    }
