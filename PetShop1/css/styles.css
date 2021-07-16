@@ -4,8 +4,17 @@ h2{
 /* Header */
 header{
     background-color: #F0A83E;
+
+}
+.div {
+    background-color: black;
+
 }
 
+p{
+    color: white;
+    display: inline-block;
+}
 
 h1{
     color:#FFFFFF;
@@ -37,6 +46,13 @@ main{
     text-align: center;
     
 }
+.topbar {
+    width: 20%;
+    margin-left: 40%;
+    padding-top: 0%;
+    text-align: right;
+}
+
 
 .lista{
     display: inline-block;
