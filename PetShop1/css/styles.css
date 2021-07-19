@@ -28,7 +28,8 @@ span{
 nav {
     color: white;
     display: inline-block;
-    text-align: right;
+    text-align: left;
+    
 }
 
     
@@ -67,6 +68,7 @@ main{
 
 /* Footer */
 footer{
+    background-size: cover;
     background-color: #3C2313;
     color: #ffffff;
 }
