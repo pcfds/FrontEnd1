@@ -17,12 +17,19 @@ p{
 }
 
 h1{
-    color:#FFFFFF;
-}
-span{
-    color: #3C2313;
+    color: white;
+    display: inline-block;
 }
 
+span{
+    color: black
+}
+
+nav {
+    color: white;
+    display: inline-block;
+    text-align: right;
+}
 
     
 /* Main */
