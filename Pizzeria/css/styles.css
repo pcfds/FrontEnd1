@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*----------------------------- General -----------------------------*/
+
+*{
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+}
+ul {
+    list-style-type: none; 
+    font-weight: 400;   
+    size:16px; 
+}
+nav{
+    color:white
+}
+/*----------------------------- Header -----------------------------*/
+header{
+    background-color: #222222;
+}
+.containerHeader {
+
+    margin: 10 auto;
+    
+    display: flex; 
+    
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.containerHeader nav {
+    padding: 20px;
+}
+
+/*Logo pizza&font*/
+span.pizza{
+    color: green;
+}
+span.separador{
+ color: white;
+}
+span.front{
+    color: red;
+}
+
+
+/*------------------------------ Main -----------------------------*/
+.padre{
+    display: flex;
+    background-color: #E3E3E3;
+    margin: 19px 35px;
+    justify-content: space-between;
+
+    
+}
+
+.containerPizzas{
+    border-radius: 5px;
+    display: flex;
+}
+.item2 h2{
+    text-align: center;
+}
+
+.item1{
+    background-image: url("../img/delivery.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 490px;
+    height: 350px;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.item2{
+    background-color: white;
+    display: inline-block;
+    width: 490px;   
+    height: 350px;
+    border: 2px;
+    border-radius: 5px;
+}
+
+/*----------------------------- Footer -----------------------------*/
+.containerFooter{
+    background-color: #222222;
+    display: flex;
+    color:#F3F3F3;
+    align-items: center;
+    justify-content: space-between;
+}
+.pizzaTitulo{
+    display: inline-flex;
+    margin-right: 50px;
+}
