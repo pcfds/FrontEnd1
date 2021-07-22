@@ -5,9 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* header*/
 
+h2{
+   font-family: "Roboto";
+   font-size: 40px;
+   line-height: 46,88px;
+}
+.corazon {
+    color: red
+}
 .descuento{
     background-color: #1CD1B0;
     height: 38px;
