@@ -1,110 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Pet Shop</title>
-</head>
-
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Pet Shop</title>
+    </head>
 <body>
-    <header>
-        <div class="div">
-            <p>Grandes ofertas en comederos</p>
-            <p class="topbar">Español
-                Arg$ </p>
-
+    <!-- Barra negra ofertas -->
+    <div class="ofertas">
+        <p>Grandes ofertas en comederos</p>
+        <div class="pais">
+            <ul>
+                <li>Español <i class="fas fa-chevron-down"></i></li>
+                <li>ARG$ <i class="fas fa-chevron-down"></i></li>
+            </ul>
         </div>
-        <div>
-
-            <h1> <i class="fas fa-dog"></i>
-                <span>Front</span>  Cat&Dog
-                <i class="fas fa-cat"></i>
-            </h1>
-
-            <nav>
-                <ul>
-                    <li><i class="fas fa-paw"></i>Categorias</li> 
-                    <li><i class="fas fa-paw"></i>Pets</li>
-                    <li><i class="fas fa-paw"></i>Nosotros</li>
-                    <li><i class="fas fa-paw"></i>Contactanos</li>
-                </ul>
-            </nav>
-    </header>
-    <!-- ------------------------MAIN-------------------------- -->
-
-    <main>
-        <section class="banner">
-            <div class=banner1>
-                <h2>¡Es un placer tenerte aquí!</h2>
-                <h4> ¡Comederos en descuento!</h4>
-                <h3>COMEDEROS</h3>
-            </div>
-        </section>
-        <section>
-            <i class="fas fa-paw">
-                <h2>Productos Destacados</h2>
-                <ul class="lista">
-                    <li>Comederos</li>-
-                    <li>Accesorios</li>-
-                    <li>Comida</li>
-                </ul>
-        </section>
-        <section>
-            <img src="img/churrasquito.png" alt="churrasco">
+    </div>
+<!-- Aqui comienza el header -->
+<header>
+    <h1><img src="img/Cat.png" alt="Gato"> Front<span>Cat&Dog <img src="img/Dog.png" alt="Perro"></span></h1>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
+            <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
+            <li><a href="#"><i class="fas fa-paw"></i> Nosotros</a></li>
+            <li><a href="#"><i class="fas fa-paw"></i> Contactanos</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- imagen principal -->
+    <div class="img-principal">
+        <div class="comederos">
+            <h2>¡Es un placer tenerte aquí! </h2>
+            <p>¡Comederos en descuento!</p>
+            <input type="submit" value="COMEDEROS">
+        </div>
+    </div>
+    <div class="productos-destacados">
+        <img src="img/pawprint 1.png" alt="Huella" class="img-huella">
+        <h2>Productos Destacados</h2>
+        <ul>
+            <li>Comederos</li>
+            <li>-</li>
+            <li>Accesorios</li>
+            <li>-</li>
+            <li>Comida</li>
+        </ul>
+    </div>
+  <!-- Section de los productos -->
+  <section>
+    <div class="churrasco">
+        <div class="texto-section">
             <p>Juguete Churrasquito</p>
-            <p>$150</p>
-            <img src="img/comedero.png" alt="comedero">
-            <p>Comedero Para Perro</p>
-            <p>$250</p>
-            <img src="img/Huesito.png" alt="huesito">
+            <p class="precio">$150</p>
+        </div>
+    </div>
+    <div class="comedero">
+        <div class="texto-section">
+            <p>Comedero para perro</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+    <div class="hueso">
+        <div class="texto-section">
             <p>Juguete Huesito</p>
-            <p>$650</p>
-        </section>
-        <section>
-            <h3>Contáctanos</h3>
-            <p>Nombre y Apellido</p>
-            <p>Ingresá tu correo electrónico</p>
-            <p>Telefono</p>
-            <div>
-                <button>Resetear</button>
-                <button>Enviar</button>
+            <p class="precio">$650</p>
+        </div>
+    </div>
+</section>
+<!-- acá comienza el formulario -->
+<section class="formulariopadre">
+    <div><h3>Contáctanos</h3>
+    </div>
+    <div>
+        <input type="text" value= "Nombre y Apellido" required> 
+        <input type="email" value= "Ingrese tu correo electronico">
+        <input type="tel" value= "Teléfono"> 
+    </div>
+    
+  
+</section>
+</main>
+<footer>
+    <!-- contenedor footer -->
+    <div class="container-footer">
+        <!-- localizaciones footer -->
+        <div class="ubicacion-footer">
+
+            <div class="ubicaciones">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="datos">
+                    <h5>Localidad</h5>
+                    <p>Calle - provincia</p>
+                </div>
             </div>
-        </section>
-    </main>
-    <!-- --------------------------FOOTER--------------------------- -->
-    <footer>
-        <div>
-            <i class="far fa-envelope"></i>
-            <h3>Suscríbete para más novedades</h3>
-            <p>Ingresa tu correo electrónico</p>
-            <p>Suscribirme</p>
-        </div>
 
-        <div>
-            
-            <h3>Localidad <i class="fas fa-map-marker-alt"></i></h3>
-            <p> Calle - Provincia </p>
-             <h3>Teléfon <i class="fas fa-phone-square-alt"></i></h3>
-            <p> Número de teléfono </p>
-            <h3>Correo Electrónico <i class="far fa-envelope"></i> </h3>
-            <p> Dirección de correo </p>
-        </div>
-        <div>
-            <h1> <i class="fas fa-dog"></i>
-                <span>Front</span>  Cat&Dog
-                <i class="fas fa-cat"></i>
-            </h1>
-        </div>
+            <div class="ubicaciones">
+                <i class="fas fa-phone-alt"></i>
+                <div class="datos">
+                    <h5>Teléfono</h5>
+                    <p>Número de teléfono</p>
+                </div>
+            </div>
 
-        <div>
-            <p> Todos los Derechos Reservados </p>
+            <div class="ubicaciones">
+                <i class="fas fa-envelope-open-text"></i>
+                <div class="datos">
+                    <h5>Correo Electrónico</h5>
+                    <p>Dirección de correo</p>
+                </div>
+            </div>
+           
+            </div>
+           <!-- Logo footer -->
+            <div class="logo-footer">
+                <h2><img src="img/Cat.png" alt="Gato"> Front<span>Cat&Dog <img src="img/Dog.png" alt="Perro"></span>
+                </h2>
+
+            </div>
         </div>
-    </footer>
+        <!-- parrafo negro footer -->
+        <p class="parrafo-footer">Todos los derechos reservados Front End</p>
+</footer>
 </body>
-
 </html>
