@@ -176,7 +176,7 @@ section {
     background-size: cover;
     background-position:  center;
 }
-
+<
 .texto-section {
     position: relative;
     top: 290px;
@@ -252,15 +252,39 @@ footer{
     color: var(--segundo-color);
 }
 
-.formulariopadre{
+
+
+.formulariohijo{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+   }
+.inputhijo{
+    color: white;
+    background-color: var(--tercer-color);
+    border-radius: 30px;
     padding: 20px;
+    width: 300px;
+
+}
+.botonresetear{
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #8A8787;
+    color: white;
+    width: 100px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.botonenviar{
+    border-radius: 30px;
+    padding: 5px;
+    background-color: var(--segundo-color);
+    color: white;
+    width: 100px;
+    border: none;
+    cursor: pointer;
    
 
 }
-
-
-
-
