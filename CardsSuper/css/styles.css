@@ -1,65 +1,55 @@
 /* general */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* header*/
-
-h2{
-   font-family: "Roboto";
-   font-size: 40px;
-   line-height: 46,88px;
-}
-.corazon {
-    color: red
-}
-.descuento{
-    background-color: #1CD1B0;
-    height: 38px;
-    left: 0px;
-    top: 0px;
+:root {
+    --primer-color: #D1891C;
+    --segundo-color: #00669F;
+    --tercer-color: #F3F3F3;
+    --cuarto-color: #FFFFFF;
 }
 
-.barraNav{
-    background: #00669F;
-    height: 101px;
-    left: 0px;
-    top: 38px;
-    position:sticky;
-    top: 0;
-    z-index:999;
-}
-
-
- /*main*/
-.card{
-    line-height: 1.5;
-    margin: 6px 0px 6px 0px;
-    padding: 0px 6px 0px 6px;
-}
-.desc{
-    line-height: 1.5;
-    margin: 5px 5px 5px 5px;
-    padding: 15px 15px 15px 15px;
-    text-align: center;
-    text-size-adjust: 100%;
+body {
+    font-family: 'Roboto', sans-serif;
 
 }
 
-footer {
-    background-color: #00669F;
-    color: white;
-    width: 1024; 
-    height: 51px;
-    top: 972px;
-
-    width: 337ox;
-    height: 19px;
-    top:988px;
-    left:16px;
-
+.descuento {
+    background-color: var(--primer-color);
+    font-weight: 800;
+    padding: 5px 67px;
 }
+
+.Logo {
+    background-color: var(--segundo-color);
+    padding: 15px 67px;
+}
+
+h1 {
+    color: var(--cuarto-color);
+    font-weight: 800;
+}
+
+.cointanerPadre
+
+.card { display: flex;
+        background-color: var(--tercer-color);
+        justify-content: space-between;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    footer {
+        background-color: var(--segundo-color);
+        color: var(--cuarto-color);
+        text-align: center;
+        justify-content: center;
+
+    }
