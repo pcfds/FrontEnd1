@@ -176,7 +176,7 @@ section {
     background-size: cover;
     background-position:  center;
 }
-<
+
 .texto-section {
     position: relative;
     top: 290px;
@@ -288,3 +288,54 @@ footer{
    
 
 }
+
+@media screen and (max-width: 600px){
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .gabitequeremos{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        width: 100%;
+       
+    }
+
+header nav ul li{
+        display: none;
+
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0px;
+    
+}
+
+/* @media  screen and (max-width: 480px){
+    html{
+        font-size: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .icono-menu{
+        display: block;
+    }
+    section, footer{
+        padding: unset;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        width: unset;
+        margin-bottom: .2rem;
+    }
+} */

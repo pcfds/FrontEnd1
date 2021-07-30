@@ -37,7 +37,9 @@ h1 {
     font-weight: 800;
 }
 
-.cointanerPadre
+.cointanerPadre{
+    display: flex;
+}
 
 .card { display: flex;
         background-color: var(--tercer-color);
