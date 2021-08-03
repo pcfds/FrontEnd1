@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla&family=Roboto&display=swap');
+
+:root {
+    --primercolor: #00669F;
+    --segundondocolor: #1CD1B0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    background-color: var(--primercolor);
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+
+.topbar {
+    background-color: var(--segundondocolor);
+    color: black;
+    padding-left: 20px;
+}
+
+
+.form
+
+/*PADRE*/
+    {
+    display: flex;
+    margin-top: 230px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form
+
+/*hijo*/
+    {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+h2 {
+    font-size: 72px;
+    font-weight: 100px;
+    margin-bottom: 55px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+form input {
+
+    height: 60px;
+    padding-left: 26px;
+    border-width: 3px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+
+}
+
+
+.boton {
+
+    background-color: var(--segundondocolor);
+    color: black;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 64px;
+}
+
+footer {
+
+    text-align: center;
+    background-color: var(--primercolor);
+    color: white;
+    margin-top: 355px;
+
+}
+
+.registro{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
