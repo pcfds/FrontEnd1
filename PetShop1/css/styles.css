@@ -1,4 +1,71 @@
+@-webkit-keyframes wiggle {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(20deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-ms-keyframes wiggle {
+    0% {
+        -ms-transform: rotate(1deg);
+    }
+
+    25% {
+        -ms-transform: rotate(-1deg);
+    }
+
+    50% {
+        -ms-transform: rotate(1.5deg);
+    }
+
+    75% {
+        -ms-transform: rotate(-5deg);
+    }
+
+    100% {
+        -ms-transform: rotate(0deg);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -15,6 +82,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .ofertas {
     background-color: var(--primer-color);
     height: 30px;
@@ -46,6 +114,7 @@ ul li {
     display: inline;
     padding-right: 15px;
 }
+
 header {
     background-color: var(--segundo-color);
     height: 82px;
@@ -66,7 +135,22 @@ img {
 h1 {
     font-size: 25px;
     padding-left: 58px;
+
+
 }
+
+h1:hover {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+
 
 nav {
     margin-right: 40px;
@@ -78,63 +162,76 @@ a {
     padding: 10px;
 }
 
-a:hover {
-    background-color: var(--tercer-color);
+nav ul li a:hover {
+    color: #3C2313;
+
+
 }
 
 nav .fas {
     font-size: 1rem;
 }
+
 .img-principal {
-background-image: url('../img/foto.png');
-background-size: cover;
-height: 500px;
+    background-image: url('../img/foto.png');
+    background-size: cover;
+    height: 500px;
 }
 
 .comederos {
-width: 50%;
-margin-left: auto;
-text-align: center;
-position: relative;
-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
 
 
 }
 
+h2::first-letter {
+    font-size: 3rem;
+}
+
 h2 {
-width: 40%;
-color: var(--tercer-color);
-background-color: var(--cuarto-color);
-padding: 8px 0px;
-margin-right: auto;
-margin-left: auto;
-font-weight: 100;
+    width: 40%;
+    color: var(--tercer-color);
+    background-color: var(--cuarto-color);
+    padding: 8px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 100;
+
 
 }
 
 .comederos>p {
-color: var(--tercer-color);
-line-height: 50px;
+    color: var(--tercer-color);
+    line-height: 50px;
 }
 
-input[type=submit] {
-background-color: var(--segundo-color);
-color: var(--cuarto-color);
-height: 50px;
-width: 192px;
-border-color: transparent;
-box-shadow: 1px 1px 10px 1px var(--tercer-color);
+.comederos h3 {
+    background-color: var(--segundo-color);
+    color: var(--cuarto-color);
+    height: 50px;
+    width: 192px;
+    border-color: transparent;
+    box-shadow: 1px 1px 10px 1px var(--tercer-color);
+    padding-top: 15px;
+    border-radius: 10px;
 }
 
-input[type=submit]:hover {
-background-color: var(--tercer-color);
-}
 
 .productos-destacados {
     margin-top: 50px;
     text-align: center;
 }
-
+ 
+.img-huella:hover {
+    
+}
 .img-huella {
     width: 50px;
     height: 50px;
@@ -143,6 +240,7 @@ background-color: var(--tercer-color);
 .productos-destacados>h2 {
     font-weight: bold;
 }
+
 section {
     margin-top: 50px;
     display: flex;
@@ -157,7 +255,7 @@ section {
     width: 25%;
     height: 350px;
     background-size: cover;
-    background-position:  center;
+    background-position: center;
 
 }
 
@@ -166,7 +264,7 @@ section {
     width: 25%;
     height: 350px;
     background-size: cover;
-    background-position:  center;
+    background-position: center;
 }
 
 .hueso {
@@ -174,7 +272,7 @@ section {
     width: 25%;
     height: 350px;
     background-size: cover;
-    background-position:  center;
+    background-position: center;
 }
 
 .texto-section {
@@ -190,9 +288,10 @@ section {
     padding-bottom: 30px;
 }
 
-footer{
+footer {
     margin-top: 100px;
 }
+
 .parrafo-footer {
     color: var(--cuarto-color);
     text-align: center;
@@ -219,6 +318,7 @@ footer{
 .logo-footer {
     width: 50%;
 }
+
 
 .ubicaciones {
     display: flex;
@@ -252,70 +352,94 @@ footer{
     color: var(--segundo-color);
 }
 
+input [type="text"], input [type="email"]: focus{
+    border: 3px solid
+}
 
 
-.formulariohijo{
+
+.formulariohijo {
     display: flex;
     flex-direction: column;
-   }
-.inputhijo{
+    width: 25%;
+    align-items: center;
+}
+
+.inputhijo {
     color: white;
     background-color: var(--tercer-color);
-    border-radius: 30px;
+    border: 0PX;
+    border-radius: 25px;
     padding: 20px;
-    width: 300px;
+    width: 80%;
+    margin: 10PX 0PX;
+}
+
+.formulariohijo h3 {
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--tercer-color);
 
 }
-.botonresetear{
+
+.botonresetear {
     border-radius: 30px;
     padding: 5px;
     background-color: #8A8787;
     color: white;
-    width: 100px;
+    width: 110px;
+    height: 34PX;
     border: none;
     margin: 10px;
     cursor: pointer;
 }
 
-.botonenviar{
+.botonenviar {
     border-radius: 30px;
     padding: 5px;
     background-color: var(--segundo-color);
     color: white;
-    width: 100px;
+    width: 110px;
+    height: 34px;
     border: none;
     cursor: pointer;
-   
+
 
 }
 
-@media screen and (max-width: 600px){
+
+
+@media screen and (max-width: 600px) {
 
     .contenedor {
         display: flex;
         flex-direction: column;
 
     }
-    .gabitequeremos{
+
+    .gabitequeremos {
         display: flex;
         flex-direction: column;
 
         align-items: center;
         width: 100%;
-       
+
     }
 
-header nav ul li{
+    header nav ul li {
         display: none;
 
-}
-.container-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 0px;
-    
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0px;
+
+    }
 }
 
 /* @media  screen and (max-width: 480px){
