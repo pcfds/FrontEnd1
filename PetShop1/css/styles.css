@@ -140,12 +140,16 @@ h1 {
 }
 
 h1:hover {
+   animation-name: wiggle;
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
+    animation-duration: 1000ms;
     -ms-animation-duration: 1000ms;
     -webkit-animation-duration: 1000ms;
+    animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;
     -ms-animation-iteration-count: 1;
+animation-timing-function: ease-in-out ;
     -webkit-animation-timing-function: ease-in-out;
     -ms-animation-timing-function: ease-in-out;
 }
@@ -229,9 +233,7 @@ h2 {
     text-align: center;
 }
  
-.img-huella:hover {
-    
-}
+
 .img-huella {
     width: 50px;
     height: 50px;
@@ -352,7 +354,7 @@ footer {
     color: var(--segundo-color);
 }
 
-input [type="text"], input [type="email"]: focus{
+input [type="text"], input [type="email"]:focus{
     border: 3px solid
 }
 

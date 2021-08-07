@@ -1,57 +1,155 @@
 /* general */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* header*/
 :root {
-    --primer-color: #D1891C;
-    --segundo-color: #00669F;
-    --tercer-color: #F3F3F3;
-    --cuarto-color: #FFFFFF;
+  --primer-color: #d1891c;
+  --segundo-color: #00669f;
+  --tercer-color: #f3f3f3;
+  --cuarto-color: #ffffff;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 .descuento {
-    background-color: var(--primer-color);
-    font-weight: 800;
-    padding: 5px 67px;
+  background-color: var(--primer-color);
+  font-weight: 800;
+  padding: 5px 67px;
 }
 
 .Logo {
-    background-color: var(--segundo-color);
-    padding: 15px 67px;
+  background-color: var(--segundo-color);
+  padding: 15px 67px;
 }
 
 h1 {
-    color: var(--cuarto-color);
-    font-weight: 800;
+  color: var(--cuarto-color);
+  font-weight: 800;
 }
 
-.cointanerPadre{
-    display: flex;
+.cointanerPadre {
+  display: flex;
+  flex-wrap: wrap; /* permite que se doble el flex en otro bloque*/
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.card { display: flex;
-        background-color: var(--tercer-color);
-        justify-content: space-between;
-        flex-direction: column;
-        width: 50%;
-    }
+.card {
+  display: flex;
+  background-color: var(--tercer-color);
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px;
+  width: 45%;
+  height: 600px;
+  border-radius: 5%;
+}
 
-    footer {
-        background-color: var(--segundo-color);
-        color: var(--cuarto-color);
-        text-align: center;
-        justify-content: center;
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
 
-    }
+.desc p {
+  margin-top: 20px;
+}
+
+.desc div a {
+  text-emphasis: none;
+  text-decoration: none;
+  background-color: var(--segundo-color);
+  color: var(--cuarto-color);
+  padding: 20px 50px;
+  margin: 30px;
+  display: block;
+}
+
+.fondobatman {
+  background-image: url(/FrontEnd1/CardsSuper/img/fondobatman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.fondoMujerMaravilla {
+  background-image: url(/FrontEnd1/CardsSuper/img/FondoMujerMaravilla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.fondosuperman {
+  background-image: url(/FrontEnd1/CardsSuper/img/fondosuperman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.fondohurley {
+  background-image: url(/FrontEnd1/CardsSuper/img/fondohurley.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.div-corazon {
+  color: red;
+  position: absolute;
+  font-size: 20px;
+  left: 30px;
+  top: 20px;
+}
+.logo-batman img {
+  width: 100px;
+  border-radius: 50%;
+}
+.logo-batman {
+  position: absolute;
+  bottom: calc(0% - 50px);
+  left: calc(50% - 50px);
+}
+.logo-mujer img {
+  width: 100px;
+  border-radius: 50%;
+}
+.logo-mujer {
+  position: absolute;
+  bottom: calc(0% - 50px);
+  left: calc(50% - 50px);
+}
+.logo-superman img {
+  width: 100px;
+  border-radius: 50%;
+}
+.logo-superman {
+  position: absolute;
+  bottom: calc(0% - 50px);
+  left: calc(50% - 50px);
+}
+.logo-hurley img {
+  width: 100px;
+  border-radius: 50%;
+}
+.logo-hurley {
+  position: absolute;
+  bottom: calc(0% - 50px);
+  left: calc(50% - 50px);
+}
+
+footer {
+  background-color: var(--segundo-color);
+  color: var(--cuarto-color);
+  text-align: center;
+  justify-content: center;
+}
